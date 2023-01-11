@@ -2,7 +2,7 @@
 ---
 
 # floda.com/fa page front-end
-## [review online](https://arvancloud.netlify.app/)
+## [review online](https://mohammad-zeynali.github.io/floda-shop/)
 
 ---
 ## tips
