@@ -14,6 +14,60 @@ function changeLink (linkElem) {
 
 
 
+// select Element user basket To Dom 
+
+const overlayContainer = document.querySelector("#overlay");
+const shoppingCardBtn = document.querySelector('#shopping-card');
+const userBasketCard = document.querySelector('.user-basket');
+const userBasketCloseBtn = document.querySelector('.user-basket__close')
+
+
+// show Shopping Card
+function shoppingCardShow () {
+
+  if(userBasketCard.classList.contains('user-basket-disable')){
+
+    userBasketCard.className = 'user-basket user-basket__active'
+    overlayContainer.classList.add('overlay')
+
+  }else{
+    userBasketCard.className = 'user-basket user-basket-disable'
+    overlayContainer.classList.remove('overlay')
+  }
+
+}
+
+// close user Basket
+function closeShoppingCard () {
+  userBasketCard.className = 'user-basket user-basket-disable'
+  overlayContainer.classList.remove('overlay')
+}
+
+
+
+
+// close all form 
+function closeAllCards () {
+
+  // close shopping card
+  userBasketCard.className = 'user-basket user-basket-disable'
+  overlayContainer.classList.remove('overlay')
+
+}
+
+
+
+
+
+userBasketCloseBtn.addEventListener('click' , closeShoppingCard)
+shoppingCardBtn.addEventListener('click', shoppingCardShow)
+overlayContainer.addEventListener('click' , closeAllCards)
+
+
+
+
+
+
 // setting slider image 
 $(document).ready( function (){
   $('.slider-image').slick({
@@ -75,53 +129,3 @@ $(document).ready(function(){
 ]
   });
 });
-
-
-// select Element To Dom 
-
-const overlayContainer = document.querySelector("#overlay");
-const shoppingCardBtn = document.querySelector('#shopping-card');
-const userBasketCard = document.querySelector('.user-basket');
-const userBasketCloseBtn = document.querySelector('.user-basket__close')
-
-
-// show Shopping Card
-function shoppingCardShow () {
-
-  if(userBasketCard.classList.contains('user-basket-disable')){
-
-    userBasketCard.className = 'user-basket user-basket__active'
-    overlayContainer.classList.add('overlay')
-
-  }else{
-    userBasketCard.className = 'user-basket user-basket-disable'
-    overlayContainer.classList.remove('overlay')
-  }
-
-}
-
-// close user Basket
-function closeShoppingCard () {
-  userBasketCard.className = 'user-basket user-basket-disable'
-  overlayContainer.classList.remove('overlay')
-}
-
-
-
-
-// close all form 
-function closeAllCards () {
-
-  // close shopping card
-  userBasketCard.className = 'user-basket user-basket-disable'
-  overlayContainer.classList.remove('overlay')
-
-}
-
-
-
-
-
-userBasketCloseBtn.addEventListener('click' , closeShoppingCard)
-shoppingCardBtn.addEventListener('click', shoppingCardShow)
-overlayContainer.addEventListener('click' , closeAllCards)
