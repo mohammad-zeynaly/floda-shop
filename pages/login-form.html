@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login-form.css">
+    <title>صفحه  ورود / ثبت نام </title>
+</head>
+<body>
+
+
+
+<!-- 1-header -->
+<header class="shadow ">
+
+  <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
+      <div class="container-fluid  ">
+        <a class="navbar-brand" href="#">فروشگاه فلودا </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">محصولات ما </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                وبلاگ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">وبلاگ یک</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">وبلاگ دو </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"> وبلاگ سه </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ">تماس با ما</a>
+            </li>
+          </ul>
+
+          <div class="d-flex justify-content-center align-items-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+
+             <ul class="nav text-center m-auto mb-2 mb-lg-0 ">
+
+              <li class=" dropdown">
+                <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="login-form.html"> ثبت نام</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item " href="login-form.html"> ورود </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="text-black fs-4 me-5 me-lg-4 " title="سبد خرید" href="#"> 
+                  <i class="fa fa-cart-shopping pointer-event"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" text-black fs-4" title="سرچ" aria-current="page" href="#">
+                  <i class="fa fa-search"></i>
+
+                   </a>
+              </li>
+           
+            
+            </ul>
+           
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  
+</header>
+
+
+
+
+  <!-- 2= login-form-->
+    <section class="login-form mt-5 mb-5 pt-5 pb-5 ">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+
+
+                
+                <div class="col-12 col-lg-6 ">
+
+                    <div class="card  shadow color-black">
+                        <div class="card-body p-5 text-center">
+                            <h2 class="fs-3 mb-4"> ورود </h2>
+
+                            <form action="#" method="post">
+
+                            <div id="user-login-name" class="  mb-4">
+                                <input id="user-input__name" type="email" class="form-control form-control-lg mb-2" placeholder="لطفا ایمیل یا نام کاربری خود را وارد نمایید" required>
+                            </div>
+
+                            <div id="user-login-password" class="form-outline form-white mb-4">
+                                <input id="user-input__password" type="password" class="form-control form-control-lg mb-2" placeholder="لطفا رمز عبور خود را وارد نمایید" required>
+                            </div>
+
+
+                            <div class="col d-flex justify-content-between">
+                            <div class="password-for">
+                                <p class="small mb-5 pb-lg-2"><a href="#" class="text-password"> فراموشی رمز عبور ؟</a></p>
+                            </div>
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="form-checkbox">
+                            <label for="form-checkbox" class="form-check-label" > مرا به یاد داشته باش</label>
+                        </div>
+                    </div>
+
+                    <button id="submit-login" type="submit" class="btn btn-danger ">ورود</button>
+                  </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                  <div class="card shadow color-black">
+                    <div class="card-body p-5 text-center">
+
+                      <h2 class="fs-3 mb-4"> ثبت نام </h2>
+                      <form action="#" method="post">
+                      <div class=" mb-4">
+                        <input type="text" id="user-name" class="form-control form-control-lg mb-2" placeholder="لطفا نام خود را وارد نمایید"required>
+                      </div>
+                      
+                      <div class="mb-4">
+                        <input type="email" id="user-email" class="form-control form-control-lg mb-2" placeholder="لطفا ایمیل خود را وارد نمایید"required>
+                      </div>
+
+                      <div class="form-password row">
+
+                      <div id="user-password" class="col-lg-6 mb-4">
+                        <input type="password" class="form-control mb-2 user-password" placeholder="رمز عبور خود را وارد کنید"required>
+                      </div>
+
+                      <div id="user-password-again" class="col-lg-6 mb-4">
+                        <input type="password" class="form-control mb-2 user-password" placeholder="رمز عبور خود را تکرار کنید"required>
+                      </div>
+
+                    </div>
+
+                    <div class="form-check d-flex mb-5">
+                      <input type="checkbox" class="form-check-input" id="form-checkbox2">
+                      <label for="form-checkbox2" class="form-check-label ms-2">مشترک خبرنامه ما شوید</label>
+                    </div>
+
+                    <button id="submit-register" type="submit" class="btn btn-danger ">ثبت نام</button>
+                  </form>
+                    </div>
+                  </div>
+                </div>
+
+
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </section>
+    
+
+
+
+
+<!-- 3= Footer -->
+<footer class="bg-light">
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 text-center">
+  
+      <div class="col pt-5 pb-4">
+        <h5 class="mb-3 user-select"> ارتباط با ما  </h5>
+        <ul class="nav flex-column fs-7">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"><span> ایمیل :</span> Exampleshop@gmail.com</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"> <span> تلفن : </span> 09111111111</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"><span> ساعات کاری : </span> شنبه تا پنج شنبه ۰۸:۰۰ الی ۱۸:۰۰</a></li>
+        </ul>
+      </div>
+      
+      <div class="col pt-5 pb-4">
+        <h5 class="mb-3 user-select">دسترسی سریع </h5>
+        <ul class="nav flex-column fs-7">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">آدرس فروشگاه </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">حساب کاربری </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">پیگیری سفارشات </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">سوالات متداول </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">تماس با ما</a></li>
+        </ul>
+      </div>
+  
+  
+      <div class="col pt-5 pb-4">
+        <h5 class="mb-3 user-select">اطلاعات </h5>
+        <ul class="nav flex-column fs-7">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">صفحه اصلی </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">درباره ما </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">تماس با ما</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">نحوه ارسال</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">نحوه سفارش</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3 pt-5 pb-4">
+        <h5 class="mb-3 user-select">دسته بندی ها </h5>
+        <ul class="nav flex-column fs-7">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل عروس</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل طبیعی </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">گل های خانگی </a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">گل های لاله</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل ترحیم</a></li>
+        </ul>
+      </div>
+  
+     
+    </div>
+  </div>
+  
+  </footer>
+  
+  
+  
+  <!-- 4= copyright -->
+  <section class="copy-right d-flex align-items-center bg-gray">
+    <div class="container">
+      <div class="row mt-4">
+  
+        <div class="col-md-6 order-2 order-md-1 mt-4 text-center mt-md-0 text-md-start">
+          <p class="copy-right__text"> تمامی حقوق مادی و معنوی متعلق به 
+            <span class="copy-right__brand-name"> فروشگاه فلودا</span>
+            می باشد  
+  
+          </p>
+        </div>
+  
+  
+        <div class="col-md-6 order-1 order-md-2 ">
+          <div class="copy-right__social text-center text-md-end">
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-instagram"></i></a>
+  
+          </div>
+        </div>
+  
+  
+      </div><!-- row -->
+    </div><!-- container -->
+  </section><!-- copy-right -->
+
+
+<script src="../script/bootstrap.bundle.min.js"></script>
+</body>
+</html>
