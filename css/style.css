@@ -373,7 +373,7 @@ a{
     transform: translateX(calc(100% + 50px));
     transition: .4s ;  
     padding: 50px 20px;
-    z-index: 11;
+    z-index: 1050;
 }
 
 .user-basket-disable{
