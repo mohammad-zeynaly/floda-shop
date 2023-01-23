@@ -586,6 +586,53 @@ a{
 }
 
 
+/*
+
+    ==================
+     style page login
+    ==================
+
+*/
+
+
+input{
+    text-align: right;
+}
+
+
+input::placeholder{
+    font-size: .9rem;
+}
+
+.form-control:focus {
+    border-color: var(--color-red) !important;
+    box-shadow: 0 0 0 0.20rem rgba(177, 8, 23, 0.25);
+  }
+
+.text-password{
+    color: var(--color-red);
+    text-decoration: none;
+}
+.text-password:hover,
+.text-password:focus {
+    color: var(--color-red);
+}
+
+.form-check-input:focus{
+    border-color: var(--color-red);
+    box-shadow: 0 0 0 0.20rem rgba(177, 8, 23, 0.25);
+}
+
+.form-check-input:checked{
+background-color: var(--color-red);
+border: var(--color-red);
+}
+
+
+
+
+
+
 /* Responsive */ 
 @media only screen and (max-width: 768px) {
 
