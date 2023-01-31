@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut  icon" href="../images/favicon.ico">
+    <link rel="stylesheet"  href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet"  href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet"  href="../css/style.css">
+    <title>تماس با ما </title>
+</head>
+<body>
+    
+
+<div id="overlay" class=""></div><!-- class="overlay" -->
+
+<!-- header -->
+<header class="shadow sticky-top">
+    
+        <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
+            <div class="container-fluid  ">
+              <a class="navbar-brand" href="../index.html">فروشگاه فلودا </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0 menu">
+                  <li class="nav-item">
+                    <a class="nav-link menu-link active" aria-current="page" href="../index.html">صفحه اصلی</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu-link" href="">محصولات ما </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menu-link" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      وبلاگ
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="">وبلاگ یک</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="">وبلاگ دو </a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href=""> وبلاگ سه </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link menu-link">درباره ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="../pages/contact-us.html" class="nav-link menu-link">تماس با ما</a>
+                  </li>
+                </ul>
+    
+                <div class="d-flex justify-content-center align-items-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+    
+                   <ul class="nav text-center m-auto mb-2 mb-lg-0 ">
+    
+                    <li class=" dropdown">
+                      <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="../pages/login-form.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="../pages/login-form.html"> ثبت نام</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="../pages/login-form.html"> ورود </a></li>
+                      </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="text-black fs-4 me-5 me-lg-4"" title="سبد خرید" id="shopping-card" href="#"> 
+                        <i class="fa fa-cart-shopping pointer-event"></i>
+                      </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class=" text-black fs-4   title="سرچ " aria-current="page" href="#">
+                        <i class="fa fa-search"></i>
+    
+                         </a>
+                    </li>
+                    
+                  
+                  </ul>
+                 
+                </div>
+    
+              </div>
+            </div>
+          </nav>
+        
+</header>
+
+
+<div class="common-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 p-5 text-center">
+                <h1 class="common__title">تماس با ما </h1>
+                <ul class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-home"></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">تماس با ما</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact-area section-space pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-message">
+                    <h2 >ثبت مشاوره </h2>
+                    <form id="contact-form" action="#" method="post" class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input class="contact-message__input"  name="first_name" placeholder="Name *" type="text" required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input class="contact-message__input"  name="phone" placeholder="Phone *" type="text" required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input class="contact-message__input"name="email_address" placeholder="Email *" type="text" required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <input class="contact-message__input"  name="contact_subject" placeholder="Subject *" type="text">
+                            </div>
+                            <div class="col-12">
+                                <div class="contact2-textarea text-center">
+                                    <textarea class="contact-message__input" placeholder="Message *" rows="6" name="message" class="form-control2" required="" ></textarea>
+                                </div>
+                                <div class="contact-btn">
+                                    <button class="btn btn__bg" type="submit">ارسال پیام</button>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center">
+                                <p class="form-messege"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <h2>تماس با ما </h2>
+                    <p class="contact-info__text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                    <ul class="contact-info__list">
+                        <li><i class="fa fa-fax"></i> آدرس : اصفهان ، شهررضا ، خیابان شهید بهشتی ، میدان حر</li>
+                        <li><i class="fa fa-phone"></i> info@yourdomain.com</li>
+                        <li><i class="fa fa-envelope"></i> +88013245657</li>
+                    </ul>
+                    <div class="working-time">
+                        <h3>ساعت کاری</h3>
+                        <p><span>شنبه تا پنج شنبه:</span>08.00 الی 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-light" id="footer">
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 pt-5 text-center">
+    
+        <div class="col pt-5 pb-4">
+          <h5 class="mb-3 user-select"> ارتباط با ما  </h5>
+          <ul class="nav flex-column fs-7">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"><span> ایمیل :</span> Exampleshop@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"> <span> تلفن : </span> 09111111111</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray"><span> ساعات کاری : </span> شنبه تا پنج شنبه ۰۸:۰۰ الی ۱۸:۰۰</a></li>
+          </ul>
+        </div>
+        
+        <div class="col pt-5 pb-4">
+          <h5 class="mb-3 user-select">دسترسی سریع </h5>
+          <ul class="nav flex-column fs-7">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">آدرس فروشگاه </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">حساب کاربری </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">پیگیری سفارشات </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">سوالات متداول </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">تماس با ما</a></li>
+          </ul>
+        </div>
+    
+    
+        <div class="col pt-5 pb-4">
+          <h5 class="mb-3 user-select">اطلاعات </h5>
+          <ul class="nav flex-column fs-7">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">صفحه اصلی </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">درباره ما </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">تماس با ما</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">نحوه ارسال</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">نحوه سفارش</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3 pt-5 pb-4">
+          <h5 class="mb-3 user-select">دسته بندی ها </h5>
+          <ul class="nav flex-column fs-7">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل عروس</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل طبیعی </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">گل های خانگی </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">گل های لاله</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-gray">دسته گل ترحیم</a></li>
+          </ul>
+        </div>
+    
+       
+      </div>
+    </div>
+    
+</footer>
+    
+<!-- copyright -->
+<section class="copy-right d-flex align-items-center bg-gray">
+    <div class="container">
+      <div class="row mt-4">
+  
+        <div class="col-md-6 order-2 order-md-1 mt-4 text-center mt-md-0 text-md-start">
+          <p class="copy-right__text"> تمامی حقوق مادی و معنوی متعلق به 
+            <span class="copy-right__brand-name"> فروشگاه فلودا</span>
+            می باشد  
+  
+          </p>
+        </div>
+  
+  
+        <div class="col-md-6 order-1 order-md-2 ">
+          <div class="copy-right__social text-center text-md-end">
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="copy-right__social-item"><i class="fa-brands fa-instagram"></i></a>
+  
+          </div>
+        </div>
+  
+  
+      </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+  
+<!-- shopping Card -->
+<section class="user-basket user-basket-disable "> 
+    <div class="user-basket__close">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="user-basket__content">
+      <div class="user-basket__content-item">
+        <ul class="user-basket__list">
+          <li class="user-basket__list-item">
+            <div class="user-basket-item">
+              <a href="#" class="user-baket-item__link">
+                <img src="../images/cart-1.jpg" alt="" class="user-baket-item__image">
+              </a>
+            </div>
+            <div class="user-basket-item__desc">
+              <h3 class="user-basket-item__name">
+                <a class="user-basket-item__names" href="#"> گل لاله</a>
+              </h3>
+              <p class="user-basket-item-quantity">
+                <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
+                <span class="user-basket-item__price"> 200000 تومان</span>
+              </p>
+            </div>
+            <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
+          </li>
+          <li class="user-basket__list-item">
+            <div class="user-basket-item">
+              <a href="#" class="user-baket-item__link">
+                <img src="../images/cart-2.jpg" alt="" class="user-baket-item__image">
+              </a>
+            </div>
+            <div class="user-basket-item__desc">
+              <h3 class="user-basket-item__name">
+                <a class="user-basket-item__names" href="#"> گل لاله</a>
+              </h3>
+              <p class="user-basket-item-quantity">
+                <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
+                <span class="user-basket-item__price"> 200000 تومان</span>
+              </p>
+            </div>
+            <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
+          </li>
+        </ul>
+      </div>
+      <div class="user-basket-total">
+        <ul class="user-basket-total-list">
+          <li class="user-basket-total-list__item">
+            <span class="user-basket-total__prices">  قیمت محصول : </span>
+            <span class="user-basket-total__price">400000 تومان</span>
+          </li>
+          <li class="user-basket-total-list__item">
+            <span class="user-basket-total__post">هزینه پست : </span>
+            <span class="user-basket-total__price">20000 تومان</span>
+          </li>
+          <li class="user-basket-total-list__item">
+            <span class="user-basket-sub__totals"> جمع کل : </span>
+            <span class="user-basket-total__price"> 420000 تومان  </span>
+          </li>
+        </ul>
+      </div>
+      <div class="user-basket__card">
+        <a class="user-basket__link" href="#"><i class="fa fa-shopping-cart"> مشاهده سبد خرید  </i></a>
+      </div>
+    </div>
+</section>
+
+
+<script src="../script/bootstrap.bundle.min.js"></script>
+<script src="../script/app.js"></script>
+</body>
+</html>

@@ -673,3 +673,226 @@ border: var(--color-red);
         height:200px;
     }
 }
+/* ================= style page contact Us  =================*/ 
+.common-bg{
+    background-color: #f6f6f6;
+}
+.common__title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb-item{
+    color: var(--color-red) !important;
+}
+
+.fa-home{
+    color: #333333;
+}
+
+.contact-message h2 {
+    color: #111;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 28px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .contact-message h2 {
+        padding-bottom: 15px;
+    }
+}
+
+.contact-message form input,
+.contact-message form textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 10px;
+    border-bottom: 3px solid transparent;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+}
+
+.form-control2 {
+    margin-bottom: 20px !important;
+}
+
+.btn__bg {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-transform: capitalize;
+    background-color: #CC2121;
+}
+.contact-message__input{
+    border: none !important;
+    outline: none;
+}
+.contact-message__input:focus{
+    border:1px solid var(--color-red) !important;
+    box-shadow: 0 0 0 0.20rem rgba(177, 8, 23, 0.25);
+}
+
+.btn__bg:hover{
+    background-color: #db2828 !important;
+}
+
+.btn__bg:hover {
+    color: #fff;
+    background-color: #111;
+}
+
+
+.contact-info {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 992px){
+    
+    .contact-info h2,
+    .contact-info__text,
+    .contact-info__list,
+    .working-time{
+        padding-right: 0 !important;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .contact-info {
+        margin: 60px 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 767.98px) {
+    .contact-info {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.contact-area {
+    margin-top: -2px;
+}
+
+
+.section-space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .section-space {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px),
+only screen and (max-width: 767.98px) {
+    .contact-area {
+        margin-bottom: -4px;
+    }
+}
+.contact-info h2 {
+    color: #111;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 22px;
+    text-transform: capitalize;
+    padding-right: 2rem;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info li{
+        justify-content: center;
+    }
+    .contact-message{
+        text-align: center;
+    }
+    .contact-info h2 {
+        padding-bottom: 8px;
+    }
+    
+}
+
+.contact-info__text {
+    color: #555;
+    padding-bottom: 30px;
+    padding-right: 32px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .contact-info p {
+        padding-bottom: 10px;
+    }
+}
+
+.contact-info ul li {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 479.98px) {
+    .contact-info ul li {
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+}
+
+.contact-info ul li:last-child {
+    border-bottom: none;
+}
+
+.contact-info ul li i {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.contact-info .working-time h3 {
+    color: #111;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .contact-info .working-time h3 {
+        font-size: 16px;
+    }
+}
+
+.contact-info .working-time p {
+    padding-bottom: 0;
+}
+
+.contact-info .working-time p span {
+    color: #111;
+    padding-left: 10px;
+}
+.working-time {
+    padding-right: 32px;
+}
+
+.form-control2{
+    resize: vertical;
+}
