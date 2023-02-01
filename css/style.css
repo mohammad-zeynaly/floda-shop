@@ -741,13 +741,6 @@ border: var(--color-red);
 .btn__bg:hover{
     background-color: #db2828 !important;
 }
-
-.btn__bg:hover {
-    color: #fff;
-    background-color: #111;
-}
-
-
 .contact-info {
     height: 100%;
 }
