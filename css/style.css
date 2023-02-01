@@ -674,6 +674,7 @@ border: var(--color-red);
     }
 }
 /* ================= style page contact Us  =================*/ 
+
 .common-bg{
     background-color: #f6f6f6;
 }
@@ -808,7 +809,7 @@ only screen and (max-width: 767.98px) {
     padding-right: 2rem;
 }
 
-@media only screen and (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     .contact-info {
         text-align: center;
     }
@@ -821,7 +822,7 @@ only screen and (max-width: 767.98px) {
     .contact-info h2 {
         padding-bottom: 8px;
     }
-    
+
 }
 
 .contact-info__text {
@@ -895,4 +896,8 @@ only screen and (max-width: 767.98px) {
 
 .form-control2{
     resize: vertical;
+}
+
+.footer-contact-us{
+    margin-top: 50px;
 }
