@@ -673,6 +673,10 @@ border: var(--color-red);
         height:200px;
     }
 }
+
+
+
+
 /* ================= style page contact Us  =================*/ 
 
 .common-bg{
@@ -720,14 +724,14 @@ border: var(--color-red);
     margin-bottom: 20px !important;
 }
 
-.btn__bg {
+.btn__bg{
     color: #fff;
     font-size: 14px;
     padding: 10px 20px;
     border-radius: 0;
-    text-transform: capitalize;
     background-color: #CC2121;
     border-radius: 12px;
+    display: inline-block;
 }
 .contact-message__input{
     border: none !important;
@@ -740,7 +744,9 @@ border: var(--color-red);
 
 .btn__bg:hover{
     background-color: #db2828 !important;
+    color: #fff;
 }
+
 .contact-info {
     height: 100%;
 }
@@ -892,6 +898,22 @@ only screen and (max-width: 767.98px) {
     resize: vertical;
 }
 
-.footer-contact-us{
-    margin-top: 30px;
+.footer{
+    margin-top: 60px;
+}
+
+
+
+
+/* ================= style page About Us  =================*/ 
+.about-us__title span{
+    color: var(--color-red);
+}
+.about-us__link:hover{
+    background-color: #db2828 !important;
+    color: #fff;
+    border: none;
+}
+.about-us-team{
+    margin-top: 70px;
 }
