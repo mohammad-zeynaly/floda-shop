@@ -8,10 +8,12 @@
 ## tips
 
 * fully responsive for mobile, tablet, laptop and desktop
+* Multi page flower website
+
 ---
 ## web development technologies
 * html 
-* css (css pure + bootstrap)
+* css (bootstrap + css pure)
 * java script (javascript + jquery + slick slider)
 ---
 ## contact me
