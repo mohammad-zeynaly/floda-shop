@@ -1,17 +1,3 @@
-
-
-// chang active link 
-function changeLink (linkElem) {
-  let navLinks = document.querySelectorAll('.menu-link')
-
-  navLinks.forEach( menuLink => {
-    menuLink.classList.remove('active')
-  })
-
-  linkElem.classList.add('active')
-}
-
-
 // select Element User Basket To Dom 
 
 const overlayContainer = document.querySelector("#overlay");
