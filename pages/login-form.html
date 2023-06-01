@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../css/libs/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/libs/sweetalert2.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>صفحه  ورود / ثبت نام </title>
 </head>
@@ -16,70 +17,60 @@
 
 
 <!-- 1-header -->
-<header class="shadow ">
-
+<header class="shadow sticky-top">
   <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
       <div class="container-fluid  ">
-        <a class="navbar-brand" href="#">فروشگاه فلودا </a>
+        <a class="navbar-brand" href="../index.html">فروشگاه فلودا </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0 menu">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">صفحه اصلی</a>
+              <a class="nav-link menu-link" href="../index.html" >صفحه اصلی</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./products.html">محصولات ما </a>
+              <a class="nav-link menu-link active" aria-current="page" href="./products.html?page=products">محصولات ما </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="#"> وبلاگ </a>
+              </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link menu-link" href=""> وبلاگ </a>
+              <a href="./about-us.html?page=about-us" class="nav-link menu-link">درباره ما</a>
             </li>
             <li class="nav-item">
-              <a href="./about-us.html" class="nav-link ">درباره ما</a>
-            </li>
-            <li class="nav-item">
-              <a href="../pages/contact-us.html" class="nav-link ">تماس با ما</a>
+              <a href="./contact-us.html?page=contact-us" class="nav-link menu-link" >تماس با ما</a>
             </li>
           </ul>
-
           <div class="d-flex justify-content-center align-items-center mt-5 mt-lg-0 mb-4 mb-lg-0">
-
              <ul class="nav text-center m-auto mb-2 mb-lg-0 ">
-
               <li class=" dropdown">
-                <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="./login-form.html?page=login-form" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa fa-user"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="login-form.html"> ثبت نام</a></li>
+                  <li><a class="dropdown-item" href="./login-form.html?page=login-form"> ثبت نام</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item " href="login-form.html"> ورود </a></li>
+                  <li><a class="dropdown-item " href="./login-form.html?page=login-form"> ورود </a></li>
                 </ul>
               </li>
-
               <li class="nav-item">
-                <a class="text-black fs-4 me-5 me-lg-4" id="shopping-card" title="سبد خرید" href="#"> 
+                <a class="text-black fs-4 me-5 me-lg-4 position-relative" title="سبد خرید" id="shopping-card" href="#"> 
                   <i class="fa fa-cart-shopping pointer-event"></i>
+                  <span class="shopping-card__badge">0</span>
                 </a>
               </li>
-
               <li class="nav-item">
-                <a class=" text-black fs-4" title="سرچ" aria-current="page" href="#">
+                <a class=" text-black fs-4   " title="سرچ " aria-current="page" href="#">
                   <i class="fa fa-search"></i>
-
                    </a>
               </li>
-           
-            
             </ul>
-           
           </div>
-
         </div>
       </div>
     </nav>
-  
 </header>
 
 <!-- 2= login-form-->
@@ -223,74 +214,41 @@
 
 
 <!-- 5= shopping Card -->
-<section class="user-basket user-basket-disable "> 
-  <div class="user-basket__close">
-    <i class="fa fa-times"></i>
-  </div>
-  <div class="user-basket__content">
-    <div class="user-basket__content-item">
-      <ul class="user-basket__list">
-        <li class="user-basket__list-item">
-          <div class="user-basket-item">
-            <a href="#" class="user-baket-item__link">
-              <img src="../images/cart-1.jpg" alt="" class="user-baket-item__image">
-            </a>
-          </div>
-          <div class="user-basket-item__desc">
-            <h3 class="user-basket-item__name">
-              <a class="user-basket-item__names" href="#"> گل لاله</a>
-            </h3>
-            <p class="user-basket-item-quantity">
-              <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
-              <span class="user-basket-item__price"> 200000 تومان</span>
-            </p>
-          </div>
-          <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
-        </li>
-        <li class="user-basket__list-item">
-          <div class="user-basket-item">
-            <a href="#" class="user-baket-item__link">
-              <img src="../images/cart-2.jpg" alt="" class="user-baket-item__image">
-            </a>
-          </div>
-          <div class="user-basket-item__desc">
-            <h3 class="user-basket-item__name">
-              <a class="user-basket-item__names" href="#"> گل لاله</a>
-            </h3>
-            <p class="user-basket-item-quantity">
-              <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
-              <span class="user-basket-item__price"> 200000 تومان</span>
-            </p>
-          </div>
-          <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
-        </li>
-      </ul>
+<section class="user-basket user-basket-disable " id="user-basket"> 
+  <div class="user-basket__wrapper">
+    <div class="user-basket__close">
+      <i class="fa fa-times"></i>
     </div>
-    <div class="user-basket-total">
-      <ul class="user-basket-total-list">
-        <li class="user-basket-total-list__item">
-          <span class="user-basket-total__prices">  قیمت محصول : </span>
-          <span class="user-basket-total__price">400000 تومان</span>
-        </li>
-        <li class="user-basket-total-list__item">
-          <span class="user-basket-total__post">هزینه پست : </span>
-          <span class="user-basket-total__price">20000 تومان</span>
-        </li>
-        <li class="user-basket-total-list__item">
-          <span class="user-basket-sub__totals"> جمع کل : </span>
-          <span class="user-basket-total__price"> 420000 تومان  </span>
-        </li>
-      </ul>
+    <div class="user-basket__content">
+      <div class="user-basket__content-item">
+        <ul class="user-basket__list" id="userCart">
+          
+        </ul>
+      </div>
+      <div class="user-basket-total">
+        <ul class="user-basket-total-list" >
+          
+          <li class="user-basket-total-list__item">
+            <span class="user-basket-sub__totals"> جمع کل : </span>
+            <span class="user-basket-total__price">  </span>
+          </li>
+        </ul>
+      </div>
+      <div class="user-basket__card">
+        <a class="user-basket__link" href="#"> <i class="fa fa-shopping-cart user-basket__icon"></i> تسویه حساب </a>
+      </div>
     </div>
-    <div class="user-basket__card">
-      <a class="user-basket__link" href="#"><i class="fa fa-shopping-cart"> مشاهده سبد خرید  </i></a>
-    </div>
-  </div>
+  </div> 
+
+  <p class="user-basket__empty"></p>
+  
 </section>
 
 
 
-<script src="../script/bootstrap.bundle.min.js"></script>
+<script src="../script/libs/bootstrap.bundle.min.js"></script>
 <script src="../script/app.js"></script>
+<script src="../script/libs/sweetalert2.all.min.js"></script>
+<script type="module" src="../script/productGenerator.js"></script>
 </body>
 </html>

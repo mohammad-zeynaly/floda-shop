@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut  icon" href="../images/favicon.ico">
-    <link rel="stylesheet"  href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet"  href="../css/libs/bootstrap.rtl.min.css">
     <link rel="stylesheet"  href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/libs/sweetalert2.min.css" >
     <link rel="stylesheet"  href="../css/style.css">
     <title> محصولات ما  </title>
 </head>
@@ -15,67 +16,61 @@
 
 <div id="overlay" class=""></div><!-- class="overlay" -->
 
-<!-- header -->
+<!-- 1-header -->
 <header class="shadow sticky-top">
-        <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
-            <div class="container-fluid  ">
-              <a class="navbar-brand" href="../index.html">فروشگاه فلودا </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0 menu">
-                  <li class="nav-item">
-                    <a class="nav-link menu-link " aria-current="page" href="../index.html">صفحه اصلی</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu-link active" href="./products.html">محصولات ما </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu-link" href=""> وبلاگ </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./about-us.html" class="nav-link menu-link ">درباره ما</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../pages/contact-us.html" class="nav-link menu-link ">تماس با ما</a>
-                  </li>
+  <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
+      <div class="container-fluid  ">
+        <a class="navbar-brand" href="../index.html">فروشگاه فلودا </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0 menu">
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="../index.html" >صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link active" aria-current="page" href="./products.html?page=products">محصولات ما </a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="#"> وبلاگ </a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a href="./about-us.html?page=about-us" class="nav-link menu-link">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact-us.html?page=contact-us" class="nav-link menu-link" >تماس با ما</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center align-items-center mt-5 mt-lg-0 mb-4 mb-lg-0">
+             <ul class="nav text-center m-auto mb-2 mb-lg-0 ">
+              <li class=" dropdown">
+                <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="./login-form.html?page=login-form" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="./login-form.html?page=login-form"> ثبت نام</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item " href="./login-form.html?page=login-form"> ورود </a></li>
                 </ul>
-                <div class="d-flex justify-content-center align-items-center mt-5 mt-lg-0 mb-4 mb-lg-0">
-                   <ul class="nav text-center m-auto mb-2 mb-lg-0 ">
-                    <li class=" dropdown">
-                      <a class="text-black fs-4 me-5 me-lg-4 dropdown-toggle" title="حساب کاربری" href="../pages/login-form.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-user"></i>
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="../pages/login-form.html"> ثبت نام</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item " href="../pages/login-form.html"> ورود </a></li>
-                      </ul>
-                    </li>
-    
-                    <li class="nav-item">
-                      <a class="text-black fs-4 me-5 me-lg-4"" title="سبد خرید" id="shopping-card" href="#"> 
-                        <i class="fa fa-cart-shopping pointer-event"></i>
-                      </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                      <a class=" text-black fs-4   title="سرچ " aria-current="page" href="#">
-                        <i class="fa fa-search"></i>
-    
-                         </a>
-                    </li>
-                    
-                  
-                  </ul>
-                 
-                </div>
-    
-              </div>
-            </div>
-          </nav>
-        
+              </li>
+              <li class="nav-item">
+                <a class="text-black fs-4 me-5 me-lg-4 position-relative" title="سبد خرید" id="shopping-card" href="#"> 
+                  <i class="fa fa-cart-shopping pointer-event"></i>
+                  <span class="shopping-card__badge">0</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class=" text-black fs-4   " title="سرچ " aria-current="page" href="#">
+                  <i class="fa fa-search"></i>
+                   </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 </header>
 
 <!-- page Title-->
@@ -101,307 +96,8 @@
       <h2 class="product-title__name"> محصولات ما </h2>
       <p class="pt-1 product-title__text">گل نمی تواند بدون نور خورشید شکفته شود و انسان نمی تواند بدون عشق زندگی کند    </p>
     </div>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>15%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد" ><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-1.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل قرمز </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 230000 تومان </del></span>
-              <span class="product-price__regular">200000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-1 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>18%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-2.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل رز سفید </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 350000 تومان </del></span>
-              <span class="product-price__regular">300000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-2 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>20%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-3.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> گل یاس به رنگ سفید </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 280000 تومان </del></span>
-              <span class="product-price__regular">220000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-3 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>22%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-4.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل صورتی </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 320000 تومان </del></span>
-              <span class="product-price__regular">270000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-4 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>25%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-5.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#">  دسته گل شکوفه  </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 400000 تومان </del></span>
-              <span class="product-price__regular">300000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-5 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>20%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-6.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل شکوفه صورتی</a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 350000 تومان </del></span>
-              <span class="product-price__regular">300000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-6 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>25%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-7.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل سفید سنبل </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 430000 تومان </del></span>
-              <span class="product-price__regular">300000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-7 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>12%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-8.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل لاله </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 390000 تومان </del></span>
-              <span class="product-price__regular">350000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-8 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>22%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-9.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل ارکیده </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 530000 تومان </del></span>
-              <span class="product-price__regular">430000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-9 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>22%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-10.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#"> دسته گل طبیعی </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 530000 تومان </del></span>
-              <span class="product-price__regular">430000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-10 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>25%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-11.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#">  گل آپارتمانی </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 330000 تومان </del></span>
-              <span class="product-price__regular">230000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-11 -->
-        <div class="col mb-5 product-item">
-          <div class="card card-img__hover">
-            <div class="product-badge">
-              <div class="product-label">
-                <span class="product-label__text"> جدید</span>
-              </div>
-              <div class="product-label discount">
-                <span>20%</span>
-            </div>
-            </div>
-            <div class="btn-groups pt-2 " role="group" aria-label="Vertical button group">
-              <a href="#" class="btn-group__link" title="افزودن به علاقه مندی ها" aria-label="افزودن به علاقه مندی ها "><i class="fa fa-heart"></i></a>
-              <a href="#" class="btn-group__link" title="مشاهده سریع" aria-label=" مشاهده سریع " data-bs-toggle="modal" data-bs-target="#quick_view"><i class="fa fa-search"></i></a>
-              <a href="#" class="btn-group__link"  title=" افزودن به سبد" aria-label="افزودن به سبد"><i class="fa fa-cart-shopping"></i></a>
-            </div>
-            <img class="card-img-top " src="../images/product-12.jpg" alt="Product Image">
-          </div>
-          <div class="card-body pt-3">
-            <a class="card-title__hover card-title__link" href="#">  دسته گل ناز گل  </a>
-            <div class="product-price">
-              <span class="product-price__old"><del> 360000 تومان </del></span>
-              <span class="product-price__regular">300000 تومان</span>
-            </div>
-          </div>
-        </div><!-- col --><!-- product-12 -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="allProducts">
+        
       </div><!-- row -->
     </div><!-- container -->
 </section>
@@ -492,141 +188,107 @@
 </section>
 
   
-<!-- shopping Card -->
-<section class="user-basket user-basket-disable "> 
+<!--  shopping Card -->
+<section class="user-basket user-basket-disable " id="user-basket"> 
+  <div class="user-basket__wrapper">
     <div class="user-basket__close">
       <i class="fa fa-times"></i>
     </div>
     <div class="user-basket__content">
       <div class="user-basket__content-item">
-        <ul class="user-basket__list">
-          <li class="user-basket__list-item">
-            <div class="user-basket-item">
-              <a href="#" class="user-baket-item__link">
-                <img src="../images/cart-1.jpg" alt="" class="user-baket-item__image">
-              </a>
-            </div>
-            <div class="user-basket-item__desc">
-              <h3 class="user-basket-item__name">
-                <a class="user-basket-item__names" href="#"> گل لاله</a>
-              </h3>
-              <p class="user-basket-item-quantity">
-                <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
-                <span class="user-basket-item__price"> 200000 تومان</span>
-              </p>
-            </div>
-            <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
-          </li>
-          <li class="user-basket__list-item">
-            <div class="user-basket-item">
-              <a href="#" class="user-baket-item__link">
-                <img src="../images/cart-2.jpg" alt="" class="user-baket-item__image">
-              </a>
-            </div>
-            <div class="user-basket-item__desc">
-              <h3 class="user-basket-item__name">
-                <a class="user-basket-item__names" href="#"> گل لاله</a>
-              </h3>
-              <p class="user-basket-item-quantity">
-                <span class="user-basket-item__count"> 1 <strong>عدد</strong></span>
-                <span class="user-basket-item__price"> 200000 تومان</span>
-              </p>
-            </div>
-            <button class="user-basket-item__remove"> <i class="fa fa-times"></i></button>
-          </li>
+        <ul class="user-basket__list" id="userCart">
+          
         </ul>
       </div>
       <div class="user-basket-total">
-        <ul class="user-basket-total-list">
-          <li class="user-basket-total-list__item">
-            <span class="user-basket-total__prices">  قیمت محصول : </span>
-            <span class="user-basket-total__price">400000 تومان</span>
-          </li>
-          <li class="user-basket-total-list__item">
-            <span class="user-basket-total__post">هزینه پست : </span>
-            <span class="user-basket-total__price">20000 تومان</span>
-          </li>
+        <ul class="user-basket-total-list" >
+          
           <li class="user-basket-total-list__item">
             <span class="user-basket-sub__totals"> جمع کل : </span>
-            <span class="user-basket-total__price"> 420000 تومان  </span>
+            <span class="user-basket-total__price">  </span>
           </li>
         </ul>
       </div>
       <div class="user-basket__card">
-        <a class="user-basket__link" href="#"><i class="fa fa-shopping-cart"> مشاهده سبد خرید  </i></a>
+        <a class="user-basket__link" href="#"> <i class="fa fa-shopping-cart user-basket__icon"></i> تسویه حساب </a>
       </div>
     </div>
+  </div> 
+
+  <p class="user-basket__empty"></p>
+  
 </section>
 
-
-<!-- quick view modal-->
-<section class="modal-quick modal"  id="quick_view">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-      <div class="modal-quick-close">
-        <button class="modal-quick-close__btn" data-bs-dismiss="modal"><i class="fa fa-times modal-quick-icon"></i></button>
-      </div>
-      </div>
-      <div  class="modal-body">
-        <div class="row">
-        <div class="col-md-5 col-lg-5">
-        <div class="product-large-sliders">
-            <div class="product-large-slider-pic ">
-              <img class="product-large-slider__image active" src="../images/product-details-img1.jpg" alt="product slider images">
-            </div>
-          </div><!--product-large-slider-->
-        </div><!-- col-md-5 -->
-        <div class="col-md-7 col-lg-7">
-          <div class="porduct-modal product-modal-desc">
-            <h3 class="product-modal-desc__title fs-4 pt-2 pb-4">دسته گل صورتی </h3>
-            <div class="product-modal-stars d-flex pb-4">
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <div class="product-modal-reviews ps-2">
-                <span class="product-modal__review">1 رای</span>
-              </div>
-            </div>
-            <div class="product-modal-price pb-4">
-              <span class="product-modal-price__old text-secondary"><del> 400000 تومان  </del></span>
-              <span class="product-modal-price__new ps-2"> 300000 تومان </span>
-            </div>
-            <div class="product-modal-offer pb-4">
-              <span class="product-modal-offer__text"> عجله کن زمان <strong> تخفیف </strong> محدود است </span>
-            </div>
-            <div class="product-modal-check pb-4">
-              <i class="fa fa-check-circle text-success fs-6 p-1 rounded-3"></i>
-              <span class="product-modal-check__number"> 200 موجودی </span>
-            </div>
-            <div class="product-modal-description pb-2">
-              <p class="product-modal-description__text">
-                <span class="fs-5">توضیحات : </span>
-                گل ها درباره این که چطور شکوفه خواهند داد نگران نیستند
-          آن ها فقط باز می شوند و به سوی نور می چرخند و این آن ها را زیبا می سازد   
-            </div>
-            <div class="product-modal-shoping-card modal-footer d-flex align-items-center">
-              <div class="product-modal-card-title">
-                <h5 class="pt-2 fs-5"> تعداد :</h5>
-              </div>
-              <div class="product-shoping-card-number ps-3">
-                <input type="number" min="0" max="80" value="1">
-              </div>
-              <div class="product-shoping-card-btn ps-3">
-                <a class="btn btn-danger"> افزودن به سبد  </a>
-              </div>
-            </div>
-         </div>
-          </div><!-- porduct-modal -->
-        </div><!-- col-md-7 -->
-      </div><!--row--->
-      </div>
+<!--  quick view modal-->
+<section class="modal-quick modal" id="quick_view">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+    <div class="modal-quick-close">
+      <button class="modal-quick-close__btn" data-bs-dismiss="modal"><i class="fa fa-times modal-quick-icon"></i></button>
     </div>
+    </div>
+    <div  class="modal-body">
+      <div class="row">
+      <div class="col-md-5 col-lg-5">
+      <div class="product-large-sliders">
+          <div class="product-large-slider-pic ">
+            <img id="product-details__image" class="product-large-slider__image active" alt=" عکس جزئیات محصول ">
+          </div>
+        </div><!--product-large-slider-->
+      </div><!-- col-md-5 -->
+      <div class="col-md-7 col-lg-7">
+        <div class="porduct-modal product-modal-desc">
+          <h3 class="product-modal-desc__title fs-4 pt-2 pb-4" id="product-details__title">دسته گل صورتی </h3>
+          <div class="product-modal-stars d-flex pb-4">
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <div class="product-modal-reviews ps-2">
+              <span class="product-modal__review">1 رای</span>
+            </div>
+          </div>
+          <div class="product-modal-price pb-4">
+            <span class="product-modal-price__old text-secondary" ><del id="product-details__original-price"> 400000 تومان  </del></span>
+            <span class="product-modal-price__new ps-2" id="product-details__discount-price"> 300000 تومان </span>
+          </div>
+          <div class="product-modal-offer pb-4">
+            <span class="product-modal-offer__text"> عجله کن زمان <strong> تخفیف </strong> محدود است </span>
+          </div>
+          <div class="product-modal-check pb-4">
+            <i class="fa fa-check-circle text-success fs-6 p-1 rounded-3"></i>
+            <span class="product-modal-check__number"> 200 موجودی </span>
+          </div>
+          <div class="product-modal-description pb-2">
+            <p class="product-modal-description__text">
+              <span class="fs-5">توضیحات : </span>
+              گل ها درباره این که چطور شکوفه خواهند داد نگران نیستند
+        آن ها فقط باز می شوند و به سوی نور می چرخند و این آن ها را زیبا می سازد   
+          </div>
+          <div class="product-modal-shoping-card modal-footer d-flex align-items-center">
+            <div class="product-modal-card-title">
+              <h5 class="pt-2 fs-5"> تعداد :</h5>
+            </div>
+            <div class="product-shoping-card-number ps-3">
+              <input type="number" min="0" max="80" value="1">
+            </div>
+            <div class="product-shoping-card-btn ps-3">
+              <a class="btn btn-danger"> افزودن به سبد  </a>
+            </div>
+          </div>
+ </div>
+        </div><!-- porduct-modal -->
+      </div><!-- col-md-7 -->
+    </div><!--row--->
+    </div>
+  </div>
 </section>
 
-<script src="../script/bootstrap.bundle.min.js"></script>
+<script src="../script/libs/bootstrap.bundle.min.js"></script>
 <script src="../script/app.js"></script>
+<script src="../script/libs/sweetalert2.all.min.js"></script>
+<script type="module" src="../script/productGenerator.js"></script>
 </body>
 </html>
