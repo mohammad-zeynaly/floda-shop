@@ -1,5 +1,6 @@
 import allProduct from "../data/allData.js";
 import { addProductToCart } from "./modules/addProductToCart.js";
+import detailsProduct from "./modules/detailsProduct.js"
 const allProductsContainer = document.querySelector("#allProducts");
 const searchParameter = new URLSearchParams(location.search)
 let searchPageProducts = searchParameter.get("page")
