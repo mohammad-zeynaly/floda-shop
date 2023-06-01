@@ -16,6 +16,8 @@ export default function removeProductFromCart(productId, basketArray) {
   userBasketCartTemplate(removeMainProduct);
   totalPrice(removeMainProduct)
 
+  console.log("remove Product => ",userBasketCartArray)
+
   toastContainer("error","محصول با موفقیت حذف شد")
   
 }

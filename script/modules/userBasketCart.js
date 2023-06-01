@@ -23,7 +23,13 @@ window.addEventListener("load",() => {
 })
 
 function userBasketCartTemplate(basketArray) {
+
+  
   if (basketArray) {
+  if(userBasketCartArray[0] == false){
+    userBasketCartArray = userBasketCartArray.slice(1)
+    setInLocalStorage("basket",JSON.stringify(userBasketCartArray))
+  }
     userCartContainer.innerHTML = "";
     basketArray.map((cartProduct) => {
       userCartContainer.insertAdjacentHTML(
