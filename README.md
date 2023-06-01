@@ -14,10 +14,10 @@
 ## web development technologies
 * html 
 * css (bootstrap + css pure)
-* java script Pure 
+* javaScript Pure 
 * jquery
-* slick slider
-* sweet alert2
+* slickSlider
+* sweetAlert 2
 ---
 ## contact me
 * *[email](mailto:051.mhmdzynaly977@gmail.com)*
