@@ -2,7 +2,7 @@
     --color-red: #cc2121 ;
     --color-dark: #111 ;
     --color-gray: #757275 ;
-    --font-Sans: 'Iran Sans'
+    --font-Sans: "Iran Sans";
 }
 
 
@@ -362,26 +362,39 @@ a{
 
 /* 10= Start Style shopping Cart */
 
+.shopping-card__badge{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    font-size: 0.85rem;
+    background-color: #ff4343;
+    color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+}
+
 .user-basket{
     top: 0;
-    right: 400px; /*400px*/
+    right: 0; /*400px*/
     height: 100vh;
-    width: 100%;
-    max-width: 400px;
+    width: 360px;
     position: fixed;
     background-color: #ffffff;
     transform: translateX(calc(100% + 50px));
     transition: .4s ;  
-    padding: 50px 20px;
     z-index: 1050;
+    overflow-y: auto;
 }
-
+.user-basket__wrapper{
+    padding: 3rem 1rem;
+}
 .user-basket-disable{
     right: 0;
 }
 
 .user-basket__active{
-    right: 400px; 
+    right: 360px; 
 }
 
 .user-basket__close{
@@ -393,7 +406,7 @@ a{
     font-size: 1.3rem;
     cursor: pointer;
     margin-right: auto;
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
     margin-bottom: 1.5rem;
 
 }
@@ -495,25 +508,36 @@ a{
     width: 80%;
 }
 
+.user-basket-item__image{
+    width: 4.5rem;
+    height: 4.5rem;
+}
 .user-basket__card {
     margin-right: 3rem;
 }
-
 .user-basket__link{
     color:#fff;
     text-align: center;
     display: flex;
     justify-content: center;
     font-family: var(--font-Sans);
+    
 }
-
+.user-basket__icon{
+    padding-left: 0.5rem;
+}
 .user-basket__link:hover{
     color:#fff;
 }
 .user-basket__card:hover{
     background-color: var(--color-red);
 }
-
+.user-basket__empty{
+    text-align: center;
+    margin-right: 2.5rem;
+    font-size: 1.1rem;
+    
+}
 
 /* style modal quick view */ 
 .modal-dialog{
