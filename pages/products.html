@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut  icon" href="../images/favicon.ico">
-    <link rel="stylesheet"  href="../css/bootstrap.rtl.min.css">
+    <link rel="stylesheet"  href="../css/libs/bootstrap.rtl.min.css">
     <link rel="stylesheet"  href="../css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/libs/sweetalert2.min.css" >
     <link rel="stylesheet"  href="../css/style.css">
     <title> محصولات ما  </title>
 </head>
@@ -19,7 +20,7 @@
 <header class="shadow sticky-top">
   <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
       <div class="container-fluid  ">
-        <a class="navbar-brand" href="#">فروشگاه فلودا </a>
+        <a class="navbar-brand" href="../index.html">فروشگاه فلودا </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -187,7 +188,7 @@
 </section>
 
   
-<!-- 10= shopping Card -->
+<!--  shopping Card -->
 <section class="user-basket user-basket-disable " id="user-basket"> 
   <div class="user-basket__wrapper">
     <div class="user-basket__close">
@@ -218,75 +219,76 @@
   
 </section>
 
-<!-- quick view modal-->
-<section class="modal-quick modal"  id="quick_view">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-      <div class="modal-quick-close">
-        <button class="modal-quick-close__btn" data-bs-dismiss="modal"><i class="fa fa-times modal-quick-icon"></i></button>
-      </div>
-      </div>
-      <div  class="modal-body">
-        <div class="row">
-        <div class="col-md-5 col-lg-5">
-        <div class="product-large-sliders">
-            <div class="product-large-slider-pic ">
-              <img class="product-large-slider__image active" src="../images/product-details-img1.jpg" alt="product slider images">
-            </div>
-          </div><!--product-large-slider-->
-        </div><!-- col-md-5 -->
-        <div class="col-md-7 col-lg-7">
-          <div class="porduct-modal product-modal-desc">
-            <h3 class="product-modal-desc__title fs-4 pt-2 pb-4">دسته گل صورتی </h3>
-            <div class="product-modal-stars d-flex pb-4">
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
-              <div class="product-modal-reviews ps-2">
-                <span class="product-modal__review">1 رای</span>
-              </div>
-            </div>
-            <div class="product-modal-price pb-4">
-              <span class="product-modal-price__old text-secondary"><del> 400000 تومان  </del></span>
-              <span class="product-modal-price__new ps-2"> 300000 تومان </span>
-            </div>
-            <div class="product-modal-offer pb-4">
-              <span class="product-modal-offer__text"> عجله کن زمان <strong> تخفیف </strong> محدود است </span>
-            </div>
-            <div class="product-modal-check pb-4">
-              <i class="fa fa-check-circle text-success fs-6 p-1 rounded-3"></i>
-              <span class="product-modal-check__number"> 200 موجودی </span>
-            </div>
-            <div class="product-modal-description pb-2">
-              <p class="product-modal-description__text">
-                <span class="fs-5">توضیحات : </span>
-                گل ها درباره این که چطور شکوفه خواهند داد نگران نیستند
-          آن ها فقط باز می شوند و به سوی نور می چرخند و این آن ها را زیبا می سازد   
-            </div>
-            <div class="product-modal-shoping-card modal-footer d-flex align-items-center">
-              <div class="product-modal-card-title">
-                <h5 class="pt-2 fs-5"> تعداد :</h5>
-              </div>
-              <div class="product-shoping-card-number ps-3">
-                <input type="number" min="0" max="80" value="1">
-              </div>
-              <div class="product-shoping-card-btn ps-3">
-                <a class="btn btn-danger"> افزودن به سبد  </a>
-              </div>
-            </div>
-         </div>
-          </div><!-- porduct-modal -->
-        </div><!-- col-md-7 -->
-      </div><!--row--->
-      </div>
+<!--  quick view modal-->
+<section class="modal-quick modal" id="quick_view">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+    <div class="modal-quick-close">
+      <button class="modal-quick-close__btn" data-bs-dismiss="modal"><i class="fa fa-times modal-quick-icon"></i></button>
     </div>
+    </div>
+    <div  class="modal-body">
+      <div class="row">
+      <div class="col-md-5 col-lg-5">
+      <div class="product-large-sliders">
+          <div class="product-large-slider-pic ">
+            <img id="product-details__image" class="product-large-slider__image active" alt=" عکس جزئیات محصول ">
+          </div>
+        </div><!--product-large-slider-->
+      </div><!-- col-md-5 -->
+      <div class="col-md-7 col-lg-7">
+        <div class="porduct-modal product-modal-desc">
+          <h3 class="product-modal-desc__title fs-4 pt-2 pb-4" id="product-details__title">دسته گل صورتی </h3>
+          <div class="product-modal-stars d-flex pb-4">
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
+            <div class="product-modal-reviews ps-2">
+              <span class="product-modal__review">1 رای</span>
+            </div>
+          </div>
+          <div class="product-modal-price pb-4">
+            <span class="product-modal-price__old text-secondary" ><del id="product-details__original-price"> 400000 تومان  </del></span>
+            <span class="product-modal-price__new ps-2" id="product-details__discount-price"> 300000 تومان </span>
+          </div>
+          <div class="product-modal-offer pb-4">
+            <span class="product-modal-offer__text"> عجله کن زمان <strong> تخفیف </strong> محدود است </span>
+          </div>
+          <div class="product-modal-check pb-4">
+            <i class="fa fa-check-circle text-success fs-6 p-1 rounded-3"></i>
+            <span class="product-modal-check__number"> 200 موجودی </span>
+          </div>
+          <div class="product-modal-description pb-2">
+            <p class="product-modal-description__text">
+              <span class="fs-5">توضیحات : </span>
+              گل ها درباره این که چطور شکوفه خواهند داد نگران نیستند
+        آن ها فقط باز می شوند و به سوی نور می چرخند و این آن ها را زیبا می سازد   
+          </div>
+          <div class="product-modal-shoping-card modal-footer d-flex align-items-center">
+            <div class="product-modal-card-title">
+              <h5 class="pt-2 fs-5"> تعداد :</h5>
+            </div>
+            <div class="product-shoping-card-number ps-3">
+              <input type="number" min="0" max="80" value="1">
+            </div>
+            <div class="product-shoping-card-btn ps-3">
+              <a class="btn btn-danger"> افزودن به سبد  </a>
+            </div>
+          </div>
+ </div>
+        </div><!-- porduct-modal -->
+      </div><!-- col-md-7 -->
+    </div><!--row--->
+    </div>
+  </div>
 </section>
 
-<script src="../script/bootstrap.bundle.min.js"></script>
+<script src="../script/libs/bootstrap.bundle.min.js"></script>
 <script src="../script/app.js"></script>
+<script src="../script/libs/sweetalert2.all.min.js"></script>
 <script type="module" src="../script/productGenerator.js"></script>
 </body>
 </html>

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut  icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css"><!-- bootstrap -->
+    <link rel="stylesheet" href="css/libs/bootstrap.rtl.min.css"><!-- bootstrap -->
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css"><!-- FontAwesome -->
-    <link rel="stylesheet" href="css/slick/slick-theme.css"><!-- library slick -->
-    <link rel="stylesheet" href="css/slick/slick.css"><!-- library slick -->
+    <link rel="stylesheet" href="css/libs/slick-theme.css"><!-- library slick -->
+    <link rel="stylesheet" href="css/libs/slick.css"><!-- library slick -->
+    <link rel="stylesheet" href="css/libs/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.css"> <!-- custom style -->
     <title> فروشگاه فلودا</title> <!-- Project | 7 | bootstrap -->
 </head>
@@ -20,14 +21,14 @@
 <header class="shadow sticky-top">
     <nav class="navbar navbar-expand-lg bg-light pt-3 pb-3 ">
         <div class="container-fluid  ">
-          <a class="navbar-brand" href="#">فروشگاه فلودا </a>
+          <a class="navbar-brand" href="./index.html">فروشگاه فلودا </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav text-center m-auto mb-2 mb-lg-0 menu">
               <li class="nav-item">
-                <a class="nav-link menu-link active" aria-current="page" href="#" >صفحه اصلی</a>
+                <a class="nav-link menu-link active" aria-current="page" href="./index.html" >صفحه اصلی</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link menu-link" href="pages/products.html?page=products">محصولات ما </a>
@@ -413,13 +414,13 @@
       <div class="col-md-5 col-lg-5">
       <div class="product-large-sliders">
           <div class="product-large-slider-pic ">
-            <img class="product-large-slider__image active" src="images/product-details-img1.jpg" alt="product slider images">
+            <img id="product-details__image" class="product-large-slider__image active" alt=" عکس جزئیات محصول ">
           </div>
         </div><!--product-large-slider-->
       </div><!-- col-md-5 -->
       <div class="col-md-7 col-lg-7">
         <div class="porduct-modal product-modal-desc">
-          <h3 class="product-modal-desc__title fs-4 pt-2 pb-4">دسته گل صورتی </h3>
+          <h3 class="product-modal-desc__title fs-4 pt-2 pb-4" id="product-details__title">دسته گل صورتی </h3>
           <div class="product-modal-stars d-flex pb-4">
             <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
             <span class="product-modal-stars__star"><i class="fa fa-star"></i></span>
@@ -431,8 +432,8 @@
             </div>
           </div>
           <div class="product-modal-price pb-4">
-            <span class="product-modal-price__old text-secondary"><del> 400000 تومان  </del></span>
-            <span class="product-modal-price__new ps-2"> 300000 تومان </span>
+            <span class="product-modal-price__old text-secondary" ><del id="product-details__original-price"> 400000 تومان  </del></span>
+            <span class="product-modal-price__new ps-2" id="product-details__discount-price"> 300000 تومان </span>
           </div>
           <div class="product-modal-offer pb-4">
             <span class="product-modal-offer__text"> عجله کن زمان <strong> تخفیف </strong> محدود است </span>
@@ -471,6 +472,7 @@
 <script src="script/libs/bootstrap.bundle.min.js"></script><!-- Js Bootstarp -->
 <script src="script/libs/jquery-3.6.1.min.js"></script><!-- Jquery -->
 <script src="script/libs/slick.min.js"></script><!-- slick Js -->
+<script src="script/libs/sweetalert2.all.min.js"></script>
 <script type="module" src="script/app.js"></script><!-- app Js -->
 <script type="module" src="script/productGenerator.js"></script>
 </body>
